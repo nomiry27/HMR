@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#c6c6cd", "on-surface-variant": "#45464d", "tertiary-fixed-dim": "#bcc7de", "surface-container-highest": "#e0e3e5", "secondary-fixed": "#ffdcbe", "error": "#ba1a1a", "primary-container": "#131b2e", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#565e74", "on-secondary-fixed": "#2d1600", "surface-variant": "#e0e3e5", "background": "#f7f9fb", "on-surface": "#191c1e", "on-secondary-container": "#6a3c00", "primary-fixed": "#dae2fd", "outline": "#76777d", "error-container": "#ffdad6", "tertiary-fixed": "#d8e3fb", "on-tertiary-container": "#79849a", "tertiary-container": "#111c2d", "on-tertiary-fixed": "#111c2d", "on-tertiary-fixed-variant": "#3c475a", "surface-container-high": "#e6e8ea", "primary-fixed-dim": "#bec6e0", "surface-container-low": "#f2f4f6", "tertiary": "#000000", "on-primary-fixed-variant": "#3f465c", "on-tertiary": "#ffffff", "secondary": "#8b5000", "on-primary-fixed": "#131b2e", "inverse-primary": "#bec6e0", "on-error": "#ffffff", "on-primary": "#ffffff", "surface": "#f7f9fb", "on-secondary-fixed-variant": "#6a3c00", "surface-bright": "#f7f9fb", "on-background": "#191c1e", "inverse-surface": "#2d3133", "inverse-on-surface": "#eff1f3", "surface-container": "#eceef0", "secondary-container": "#ffa032", "on-secondary": "#ffffff", "on-primary-container": "#7c839b", "primary": "#000000", "surface-dim": "#d8dadc", "secondary-fixed-dim": "#ffb871" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-2xl": "3rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-sm": "0.75rem", "gutter-desktop": "2rem", "space-3xl": "4.5rem", "margin-desktop": "3.5rem", "gutter-mobile": "1rem", "space-md": "1rem", "space-2xs": "0.25rem", "space-4xl": "6rem", "space-xs": "0.5rem" }, fontFamily: { "title-md": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "headline-sm": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "headline-lg": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "display-lg-mobile": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "headline-md": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "headline-xl-mobile": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "headline-xl": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "code-sm": ["\"JetBrains Mono, monospace\""], "body-lg": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "body-sm": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "label-md": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "label-lg": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "display-lg": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "headline-lg-mobile": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""], "body-md": ["\"IBM Plex Sans Arabic, IBM Plex Sans, sans-serif\""] }, fontSize: { "title-md": ["18px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "30px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "42px", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "34px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "38px", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "code-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "34px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "26px", "fontWeight": "400" }] } } } };</script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased overscroll-none [&::-webkit-scrollbar]:hidden [scroll-behavior:smooth]">
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="h-20 w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md">
+            <div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" href="#"><img
+                        alt="Bonyan Contracting Logo" class="h-8 w-auto object-contain"
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1V0GsrJe4ZaBazKsBLk5oAmvnNF2OVVUTDf957nosKVxpiVSSlNEdvg0-rUwwBoULDwZeZ5t5n4JVn6gAMVy46xYMgMgsFUyH7Rv0hjtZ6Oicw8zsA5dZZqjU6_oBeV1w5O7GhG20_3r8oRORyy0iHtPYj7vTiSalOip2I8mCXpw31UUpXnQB0BW2dsZ4Q31cSyDT36U45_XIcHBCgWDV5ZkYkGB0Hs2V7_f0V9cag8uicOq86VBAewoAE" />
+                    <div class="flex flex-col"><span
+                            class="font-headline-sm text-headline-sm text-primary tracking-tight">مقاول عام - جدة</span><span class="font-label-md text-label-md text-on-surface-variant">للمقاولات
+                            والاستشارات الهندسية</span></div>
+                </a>
+                <div class="hidden xl:block h-6 w-px bg-surface-container-highest"></div><a
+                    class="hidden xl:flex items-center gap-space-xs text-on-surface-variant hover:text-secondary transition-colors duration-200"
+                    dir="ltr" href="tel:+966114567890"><span
+                        class="material-symbols-outlined text-secondary text-[20px]">call</span><span
+                        class="font-code-sm text-code-sm font-medium">+966 0568824635</span></a>
+            </div>
+            <nav class="hidden lg:flex items-center gap-space-md xl:gap-space-lg"
+                data-active-classes="text-secondary border-b-2 border-secondary font-semibold"><a aria-current="page"
+                    class="py-space-xs transition-colors duration-200 text-secondary border-b-2 border-secondary font-semibold"
+                    data-path="home" href="#">الرئيسية</a><a
+                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors duration-200"
+                    data-path="about" href="#about">من نحن</a><a
+                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors duration-200"
+                    data-path="services" href="#services">خدماتنا</a><a
+                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors duration-200"
+                    data-path="projects" href="#projects">مشاريعنا</a><a
+                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors duration-200"
+                    data-path="portfolio" href="#portfolio">أعمالنا</a><a
+                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors duration-200"
+                    data-path="team" href="#team">فريقنا</a><a
+                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors duration-200"
+                    data-path="contact" href="#contact">تواصل معنا</a></nav>
+            <div class="flex items-center gap-space-sm"><a
+                    class="hidden sm:inline-flex items-center gap-space-xs bg-secondary-container hover:bg-secondary text-primary-container hover:text-on-secondary px-space-md py-space-xs rounded-xl font-label-lg text-label-lg shadow-[0_1px_3px_rgba(15,23,42,0.06)] hover:shadow-[0_4px_12px_-2px_rgba(15,23,42,0.08)] transition-all duration-200"
+                    data-path="consultation" href="#consultation"><span
+                        class="material-symbols-outlined text-[18px]">support_agent</span><span>اطلب استشارة</span></a>
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+        <div class="flex flex-col w-full">
+            <!-- 1. HERO SECTION (Full-Bleed under shell with dark architectural gradient scrim) -->
+            <section class="relative w-full -mt-20 overflow-hidden bg-primary-container text-surface-container-lowest">
+                <!-- Layered image slides are cross-faded by the small controller below. -->
+                <div aria-label="صور من مشاريع بنيان" class="absolute inset-0 z-0" id="hero-slider">
+                    <div aria-hidden="false" class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out" data-slide="0">
+                        <img alt="برج حديث قيد الإنشاء عند الغروب" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cd2-_lNwUaZ5c6UrNetXjPlrDTpjtDrwi76RCvl4BEVSrAQZPrFcQWswJnpLKGaHRXVY0mNl5U2Nx73zrMRGOogdMgaom_m_V4xm9sOEQqTMHy0A8m1UjmvY9JWs6yA4aGYgMg4ahZjbz1BfMb_QX2Mz0TvSgW8tg5TUzjGFTZeHiP0nI7ZSW7tH68j9Jf8n-0wLD22pukachterB-xllP-OwZbAjp5ewxSCbG9K3MfcydQX72MY" />
+                    </div>
+                    <div aria-hidden="true" class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out" data-slide="1">
+                        <img alt="فيلا عصرية فاخرة بإضاءة المساء" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXGCVy9hsuQdqx1DpZKcJZ1MVVKJDueECKjUcnj2ihznOuS3lpz-X3mXuzfhNBYOupxNN3wqFvW0_D4hZ1VDjU52J95C46Wp6Lo4jvXJjruWrayn_dmqa68cCUp1vweQ5JMCvOISdH19sYytjVKVi9MPNtqsXVhpJVK_P3EhKhtj1xMDpSJ_55cotR7J0wVggc1AcZEGax8xiKiKViJgpwhru0jrJ7EU2zDIqc2EUfdedT1RlioaJd" />
+                    </div>
+                    <div aria-hidden="true" class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out" data-slide="2">
+                        <img alt="مجمع فلل سكنية حديثة بين المساحات الخضراء" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhgAXXfnC0pt9q3aSRhS6dbIZ0aydKx2LOMeKKEqPypteKDQWKcRmc2Igmn39ex62pQd6VPbKis0CXC-NQf9c5m5jDTQkfnQfUzSPuCYHqt-GTdjHIAIVa2yppgz0eU1yYW6vPNAvXRs51BOggCwpOWudRxzDHdKmwEt24IJmOi_SoheB9JtyTBCB5K7tX2nyrJAKmtC6LNCSUAp5IML7pTeFMzfLRXUXbePqI1JjAhTTmZ8HKF7lV" />
+                    </div>
+                    <div aria-hidden="true" class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out" data-slide="3">
+                        <img alt="أعمال صب خرسانة مسلحة في موقع صناعي" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYCFYmin0B8iDblRLCWENjj7s8s7NotRls_ErQHWcbK_JBkHmp9CDlqXZDv-kX9eGkGnmw2EMyaRsLnGHoNGwqWd1shqbwwhztSuWmY6XXUzwbApY1GdTHJiMWJhxh0yvrXQ9hiFWuhh8c969XbGcbGzlnJm8j8kwYoIPfxJerg4y_mPOONjJXmEmztqUU6IuLL7jHYgdhRoQiQm4T-6B05PSGnR4TqbMv5J0kgBlw5hKRNUFUj4BE" />
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/85 to-primary-container/70">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-primary-container/95 via-transparent to-primary-container/60">
+                    </div>
+                    <div class="absolute inset-x-0 bottom-8 z-10 flex items-center justify-between px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+                        <div class="flex items-center gap-2" id="hero-dots" role="tablist" aria-label="اختيار صورة العرض"></div>
+                        <div class="flex items-center gap-2">
+                            <button aria-label="الصورة السابقة" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-black/20 text-white backdrop-blur-md transition hover:border-secondary-container hover:bg-secondary-container hover:text-primary-container" id="hero-prev" type="button"><span class="material-symbols-outlined text-[20px]">arrow_forward</span></button>
+                            <button aria-label="الصورة التالية" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-black/20 text-white backdrop-blur-md transition hover:border-secondary-container hover:bg-secondary-container hover:text-primary-container" id="hero-next" type="button"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Container -->
+                <div
+                    class="relative z-10 w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop pt-36 pb-space-3xl lg:pt-44 lg:pb-space-4xl flex flex-col justify-between">
+                    <div class="max-w-4xl flex flex-col gap-space-md">
+                        <!-- Architectural License Badge -->
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest/10 backdrop-blur-md self-start text-secondary-container">
+                            <span class="material-symbols-outlined text-[18px]">verified</span>
+                            <span class="font-label-lg text-label-lg tracking-wide">ترخيص هندسي معتمد رقم 4820 — تصنيف
+                                أول للمقاولات العامة</span>
+                        </div>
+                        <!-- Headline -->
+                        <h1
+                            class="font-display-lg text-headline-xl md:text-display-lg font-bold text-surface-container-lowest leading-tight">
+                            نبني أفكارك... <span class="text-secondary-container">ونحوّلها إلى واقع</span>
+                        </h1>
+                        <!-- Supporting Text -->
+                        <p class="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl leading-relaxed">
+                            حلول متكاملة في التصميم الهندسي، الإشراف الفني، والأعمال الإنشائية والخرسانية المتطورة من
+                            الأساسات حتى التسليم بأعلى معايير الجودة والاستدامة الخليجية.
+                        </p>
+                        <!-- CTA Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-space-md pt-space-md">
+                            <a class="inline-flex items-center gap-space-xs bg-secondary-container hover:bg-secondary text-primary-container hover:text-on-secondary font-label-lg text-label-lg px-space-xl py-3.5 rounded-xl shadow-lg transition-all duration-200"
+                                href="#services">
+                                <span>استكشف خدماتنا</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                            </a>
+                            <a class="inline-flex items-center gap-space-xs bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest font-label-lg text-label-lg px-space-lg py-3.5 rounded-xl transition-all duration-200"
+                                href="#contact">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[18px]">calendar_month</span>
+                                <span>تواصل معنا للاستشارة</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Quick Metrics Floating Footer Bar in Hero -->
+                    <div
+                        class="mt-space-3xl grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-lg bg-surface-container-lowest/5 backdrop-blur-lg rounded-2xl p-space-md">
+                        <div class="flex flex-col gap-1 p-space-xs">
+                            <span class="font-label-md text-label-md text-on-tertiary-container uppercase">دقة التنفيذ
+                                الهندسي</span>
+                            <span
+                                class="font-headline-md text-headline-md font-bold text-secondary-container">100%</span>
+                            <span class="font-body-sm text-body-sm text-surface-container-highest">مطابقة للكود السعودي
+                                SBC</span>
+                        </div>
+                        <div class="flex flex-col gap-1 p-space-xs">
+                            <span class="font-label-md text-label-md text-on-tertiary-container uppercase">الضمان
+                                الإنشائي</span>
+                            <span class="font-headline-md text-headline-md font-bold text-surface-container-lowest">10
+                                سنوات</span>
+                            <span class="font-body-sm text-body-sm text-surface-container-highest">وثيقة تأمين وضمان
+                                شامل</span>
+                        </div>
+                        <div class="flex flex-col gap-1 p-space-xs">
+                            <span class="font-label-md text-label-md text-on-tertiary-container uppercase">معدات وآليات
+                                ثقيلة</span>
+                            <span class="font-headline-md text-headline-md font-bold text-secondary-container">+45
+                                آلية</span>
+                            <span class="font-body-sm text-body-sm text-surface-container-highest">أسطول ذاتي للصب
+                                والحفر</span>
+                        </div>
+                        <div class="flex flex-col gap-1 p-space-xs">
+                            <span class="font-label-md text-label-md text-on-tertiary-container uppercase">معدل الحوادث
+                                الميدانية</span>
+                            <span
+                                class="font-headline-md text-headline-md font-bold text-surface-container-lowest">0.0%</span>
+                            <span class="font-body-sm text-body-sm text-surface-container-highest">معايير أمان OSHA
+                                الدولية</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 2. IMPRESSIVE STATISTICS BAR -->
+            <section class="w-full relative z-20 -mt-10 px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+                <div
+                    class="w-full bg-surface-container-lowest rounded-2xl shadow-xl p-space-lg lg:p-space-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+                    <!-- Stat 1 -->
+                    <div
+                        class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container-low transition-transform hover:-translate-y-1 duration-200">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shrink-0">
+                            <span class="material-symbols-outlined text-[30px]">explore</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-baseline gap-1">
+                                <span class="font-headline-xl text-headline-xl font-bold text-primary">+15</span>
+                                <span class="font-title-md text-title-md text-secondary font-semibold">عاماً</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-on-surface-variant font-medium">خبرة رائدة في
+                                الهندسة والمقاولات</span>
+                        </div>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div
+                        class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container-low transition-transform hover:-translate-y-1 duration-200">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-secondary-container flex items-center justify-center text-primary-container shrink-0">
+                            <span class="material-symbols-outlined text-[30px]">domain</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-baseline gap-1">
+                                <span class="font-headline-xl text-headline-xl font-bold text-primary">+120</span>
+                                <span class="font-title-md text-title-md text-secondary font-semibold">مشروعاً</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-on-surface-variant font-medium">مشروع مكتمل
+                                ومسلّم بالمفتاح</span>
+                        </div>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div
+                        class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container-low transition-transform hover:-translate-y-1 duration-200">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-primary-container flex items-center justify-center text-secondary-container shrink-0">
+                            <span class="material-symbols-outlined text-[30px]">verified_user</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-baseline gap-1">
+                                <span class="font-headline-xl text-headline-xl font-bold text-primary">+80</span>
+                                <span class="font-title-md text-title-md text-secondary font-semibold">شريكاً</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-on-surface-variant font-medium">عملاء معتمدون
+                                وشركاء نجاح موثوقون</span>
+                        </div>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div
+                        class="flex items-center gap-space-md p-space-sm rounded-xl bg-surface-container-low transition-transform hover:-translate-y-1 duration-200">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                            <span class="material-symbols-outlined text-[30px]">engineering</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-baseline gap-1">
+                                <span class="font-headline-xl text-headline-xl font-bold text-primary">+25</span>
+                                <span class="font-title-md text-title-md text-secondary font-semibold">خبيراً</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-on-surface-variant font-medium">مهندس واستشاري
+                                وفني معتمد</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 3. ABOUT US SECTION -->
+            <section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface"
+                id="about">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+                    <!-- Text and Mission/Vision/Values (7 cols) -->
+                    <div class="lg:col-span-7 flex flex-col gap-space-md">
+                        <div
+                            class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-semibold">
+                            <span class="w-6 h-0.5 bg-secondary-container"></span>
+                            <span>من نحن | ريادة وجودة</span>
+                        </div>
+                        <h2 class="font-headline-xl text-headline-xl font-bold text-primary">
+                            نبني بثقة، ونبتكر بمعايير هندسية عالمية
+                        </h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            نحن في <strong class="text-on-surface font-semibold">بنيان للإعمار</strong> نقدم منظومة
+                            متكاملة تبدأ من الفكرة الهندسية والتصميم المعماري الدقيق، مروراً بالإشراف الإنشائي والحسابات
+                            المعقدة، وصولاً إلى تسليم مفاتيح المشاريع المتميزة وفق أعلى المعايير القياسية المعتمدة وكود
+                            البناء السعودي.
+                        </p>
+                        <!-- Mission / Vision / Values Tabs / Cards -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs">
+                            <!-- Card 1: الجودة -->
+                            <div
+                                class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-[20px]">high_quality</span>
+                                </div>
+                                <h4 class="font-title-md text-title-md text-primary font-bold">الجودة الفائقة</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+                                    التزام صارم بأعلى مواصفات حديد التسليح والخلطات الخرسانية المعالجة بمختبرات مرخصة.
+                                </p>
+                            </div>
+                            <!-- Card 2: الالتزام -->
+                            <div
+                                class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-primary-container text-surface-container-lowest flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-[20px]">schedule</span>
+                                </div>
+                                <h4 class="font-title-md text-title-md text-primary font-bold">الالتزام الصارم</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+                                    تسليم في الموعد المحدد وميزانيات تفصيلية مدروسة بدقة دون أي تكاليف أو مفاجآت خفية.
+                                </p>
+                            </div>
+                            <!-- Card 3: الاحترافية -->
+                            <div
+                                class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+                                </div>
+                                <h4 class="font-title-md text-title-md text-primary font-bold">الاحترافية الميدانية</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+                                    كادر استشاري سعودي ودولي مرخص، ومعدات ثقيلة ذاتية تضمن استمرارية الإنجاز اليومي.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Mission / Vision text accordion/box -->
+                        <div
+                            class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row gap-space-md items-start mt-space-xs">
+                            <div class="flex-1">
+                                <span
+                                    class="font-label-lg text-label-lg font-bold text-secondary flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-[16px]">flag</span> رسالتنا
+                                </span>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">توفير بيئات عمرانية
+                                    آمنة ومستدامة تمثل استثماراً حقيقياً للأجيال، تجمع بين الإبداع الفني ودقة التنفيذ.
+                                </p>
+                            </div>
+                            <div class="w-px h-12 bg-surface-container-highest hidden md:block"></div>
+                            <div class="flex-1">
+                                <span
+                                    class="font-label-lg text-label-lg font-bold text-primary flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-[16px]">visibility</span> رؤيتنا
+                                </span>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">أن نكون الخيار الهندسي
+                                    الأول في المملكة والخليج للمشاريع الفاخرة والأعمال التحتية الكبرى.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image & Floating Badge (5 cols) -->
+                    <div class="lg:col-span-5 relative">
+                        <div
+                            class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-high aspect-[4/5] w-full">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Three Saudi and Gulf civil engineers in white hardhats and high-visibility orange safety vests reviewing architectural structural blueprints and digital tablets on a live high-rise construction site under bright daylight."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa1Fs-_ZsJD4KGYu6o8YGrahkQTWRnlkh-yw_mrge5il71jZb3eazrFyutJWRMG9pqWkFjn7IXkWkcOqyE3uQcPq_zIurkJpP1SQ_xdsTFuajlWuL1IBCExK1-DrqagQyyPXe_MIt0peSzRZDD-UhIput_6Bl-D86KZSqwBaBZbOUoIsiNLhVUYK5GbRdPuZ7rqcNvIS79SlqYZt0avojamSZNUYar5aYN6FbVOFwFH-NgRGO255Qp" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent">
+                            </div>
+                        </div>
+                        <!-- Floating Badge -->
+                        <div
+                            class="absolute -bottom-6 -right-4 md:-right-6 bg-primary-container text-surface-container-lowest p-space-md rounded-2xl shadow-xl flex items-center gap-space-md max-w-xs">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary-container text-primary-container flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[28px]">shield</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="font-headline-sm text-headline-sm font-bold text-secondary-container">+10
+                                    سنوات</span>
+                                <span class="font-label-md text-label-md text-surface-container-high">ضمان إنشائي متكامل
+                                    على الهيكل الإنشائي والأساسات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 4. SERVICES SECTION (8-card architectural grid) -->
+            <section
+                class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low"
+                id="services">
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+                    <div
+                        class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-semibold mb-space-xs">
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                        <span>خبراتنا المتخصصة</span>
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl font-bold text-primary">
+                        خدماتنا الهندسية والإنشائية المتكاملة
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                        نغطي كامل دورة حياة المنشأة من الرسومات التخطيطية وحتى التشغيل، بأعلى درجات الدقة والامتثال
+                        الفني.
+                    </p>
+                </div>
+                <!-- 8-Card Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+                    <!-- Service 1 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">architecture</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">التصميم المعماري</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                تصميم معماري مبتكر يجمع بين الجمال والوظيفة ويحقق استغلالاً أمثل للمساحات مع مراعاة
+                                الإضاءة الطبيعية والاستدامة.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                    <!-- Service 2 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">foundation</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">التصميم الإنشائي</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                إعداد التصاميم والحسابات الإنشائية واختبارات الأحمال وفق أحدث الكودات الهندسية لضمان
+                                متانة وأمان الهيكل.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                    <!-- Service 3 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">hardware</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">أعمال الخرسانة المسلحة</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                تنفيذ القواعد، الأساسات، والأعمدة والأسقف المصبوبة مسبقاً بجودة ضبط عالية وتحكم دقيق في
+                                معالجة الخرسانة.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                    <!-- Service 4 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">apartment</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">أعمال البناء والتشييد</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                تنفيذ المشاريع بمراحلها المختلفة من أعمال العظم الشاملة حتى تسليم المفتاح بأعلى مستويات
+                                الحرفية والأمان.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                    <!-- Service 5 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">format_paint</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">التشطيبات الفاخرة</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                تنفيذ التكسيات الحجرية، الرخام، الديكورات الجبسية، الزجاج الإنشائي، والواجهات المودرن
+                                بأيدي مهنيين محترفين.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                    <!-- Service 6 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">build</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">الترميم وإعادة التأهيل</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                تطوير المباني القائمة وتدعيم العناصر الخرسانية المتضررة وعزل المنشآت وحقن التشققات
+                                بتقنيات متقدمة.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                    <!-- Service 7 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">visibility</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">الإشراف الهندسي</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                متابعة ميدانية يومية وتوثيق رقمي للمطابقة مع المخططات وإجراء الفحوصات المخبرية الدورية
+                                لاعتماد كل مرحلة.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                    <!-- Service 8 -->
+                    <div
+                        class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div class="flex flex-col gap-space-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-secondary-container group-hover:text-primary-container transition-colors flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[26px]">account_tree</span>
+                            </div>
+                            <h3 class="font-title-md text-title-md font-bold text-primary">إدارة المشاريع (PMO)</h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                تخطيط زمني محكم، ضبط سلاسل الإمداد ومراقبة التكاليف والمخاطر لضمان التسليم وفق الجدول
+                                المحدد بدقة.
+                            </p>
+                        </div>
+                        <a class="mt-space-md inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-secondary-container transition-colors"
+                            href="#contact">
+                            <span>اقرأ المزيد</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 5. OUR WORK PROCESS (7-Step Stepper Timeline) -->
+            <section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface">
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+                    <div
+                        class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-semibold mb-space-xs">
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                        <span>منهجية العمل</span>
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl font-bold text-primary">
+                        مراحل تنفيذ مشروعك باحترافية هندسية
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                        خطة عمل منهجية من 7 خطوات تضمن وضوح الرؤية والالتزام الزمني والدقة المتناهية.
+                    </p>
+                </div>
+                <!-- Responsive Process Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-space-md relative">
+                    <!-- Step 1 -->
+                    <div
+                        class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs border-r-4 border-r-secondary-container relative">
+                        <span class="font-code-sm text-headline-md font-bold text-secondary-container">01</span>
+                        <h4 class="font-title-md text-title-md font-bold text-primary">الاستشارة الأولية</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">جلسة استكشافية متعمقة لفهم رؤية
+                            العميل ومتطلبات المشروع والميزانية المبدئية.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div
+                        class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs border-r-4 border-r-primary relative">
+                        <span class="font-code-sm text-headline-md font-bold text-primary">02</span>
+                        <h4 class="font-title-md text-title-md font-bold text-primary">دراسة المشروع</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">فحص التربة، الرفع المساحي للموقع،
+                            وإعداد دراسة الجدوى الهندسية والتراخيص.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div
+                        class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs border-r-4 border-r-secondary-container relative">
+                        <span class="font-code-sm text-headline-md font-bold text-secondary-container">03</span>
+                        <h4 class="font-title-md text-title-md font-bold text-primary">التصميم المتكامل</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">المخططات المعمارية والإنشائية
+                            وشبكات الكهروميكانيك (MEP) ونماذج BIM ثلاثية الأبعاد.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div
+                        class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs border-r-4 border-r-primary relative">
+                        <span class="font-code-sm text-headline-md font-bold text-primary">04</span>
+                        <h4 class="font-title-md text-title-md font-bold text-primary">التخطيط والتسعير</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">إعداد جدول كميات (BOQ) مفصل بدقة،
+                            وجدول زمني محكم لمراحل التوريد والصب.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div
+                        class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs border-r-4 border-r-secondary-container relative">
+                        <span class="font-code-sm text-headline-md font-bold text-secondary-container">05</span>
+                        <h4 class="font-title-md text-title-md font-bold text-primary">التنفيذ الميداني</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">حفر، دك، صب القواعد، صب الأعمدة
+                            والأسقف، والبناء باستخدام معداتنا وأطقمنا المتخصصة.</p>
+                    </div>
+                    <!-- Step 6 -->
+                    <div
+                        class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs border-r-4 border-r-primary relative">
+                        <span class="font-code-sm text-headline-md font-bold text-primary">06</span>
+                        <h4 class="font-title-md text-title-md font-bold text-primary">الإشراف وضبط الجودة</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">اختبارات ضغط الخرسانة، ومطابقة
+                            العوازل واختبارات التسليك والسلامة المعتمدة.</p>
+                    </div>
+                    <!-- Step 7 -->
+                    <div
+                        class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs border-r-4 border-r-secondary relative">
+                        <span class="font-code-sm text-headline-md font-bold text-secondary">07</span>
+                        <h4 class="font-title-md text-title-md font-bold text-primary">التسليم النهائي</h4>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">تسليم مفتاح المنشأة مكتملة، مع
+                            كتيبات التشغيل وسجلات الضمان الشاملة.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 6. PROJECTS / PORTFOLIO -->
+            <section
+                class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low"
+                id="projects">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+                    <div class="flex flex-col">
+                        <div
+                            class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-semibold mb-space-xs">
+                            <span class="w-4 h-0.5 bg-secondary-container"></span>
+                            <span>معرض الإنجازات</span>
+                        </div>
+                        <h2 class="font-headline-xl text-headline-xl font-bold text-primary">
+                            مشاريع نفتخر بإنجازها وإتقانها
+                        </h2>
+                    </div>
+                    <!-- Filter Buttons -->
+                    <div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs">
+                        <button
+                            class="px-space-md py-space-xs rounded-xl bg-primary text-surface-container-lowest font-label-lg text-label-lg whitespace-nowrap shadow-sm">جميع
+                            المشاريع</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm transition-colors">فلل
+                            فاخرة</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm transition-colors">مباني
+                            تجارية</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm transition-colors">أعمال
+                            خرسانية</button>
+                        <button
+                            class="px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm transition-colors">تشطيبات</button>
+                    </div>
+                </div>
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+                    <!-- Project 1: Luxury Modern Villa -->
+                    <div
+                        class="group rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-surface-container-highest">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Stunning modern luxury private villa in Riyadh with illuminated infinity pool, floor-to-ceiling glass walls, warm timber cladding and concrete eaves during blue hour dusk."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXGCVy9hsuQdqx1DpZKcJZ1MVVKJDueECKjUcnj2ihznOuS3lpz-X3mXuzfhNBYOupxNN3wqFvW0_D4hZ1VDjU52J95C46Wp6Lo4jvXJjruWrayn_dmqa68cCUp1vweQ5JMCvOISdH19sYytjVKVi9MPNtqsXVhpJVK_P3EhKhtj1xMDpSJ_55cotR7J0wVggc1AcZEGax8xiKiKViJgpwhru0jrJ7EU2zDIqc2EUfdedT1RlioaJd" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary-container/90 text-secondary-container px-space-sm py-1 rounded-lg font-label-md text-label-md">
+                                تم التسليم 2025
+                            </div>
+                        </div>
+                        <div class="p-space-lg flex flex-col justify-between flex-1">
+                            <div>
+                                <div
+                                    class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md mb-space-xs">
+                                    <span>فلل سكنية فاخرة</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-[14px]">location_on</span> الرياض، حي
+                                        حطين</span>
+                                </div>
+                                <h3
+                                    class="font-title-md text-title-md font-bold text-primary group-hover:text-secondary transition-colors">
+                                    فيلا الأفق المعمارية (Modern Villa)</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">تنفيذ إنشائي ومعماري
+                                    كامل يشمل مسابح خارجية وتكسيات رخامية متقدمة بمساحة 1,450 م².</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex items-center justify-between">
+                                <span class="font-code-sm text-code-sm text-secondary font-semibold">1,450 م² — 14
+                                    شهراً</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2: High-rise Commercial Complex -->
+                    <div
+                        class="group rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-surface-container-highest">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Massive concrete commercial office tower under construction at sunset with towering yellow cranes, concrete slabs, glass curtain walls, and safety netting."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1A0v-INDGUwO1qjfEsLMBfku4Sj04n6QcaDGzG-zS8u-i-8MdYEwxY7oXDi9UjdpN17eHCWdcR3xumJ4fvn045eWxk-yxCTi_yV886I_k-PvgJmjvWXM0Oir-VvYcUmpTVRlYlhAA2U8br2DNOCZ0a7YpksDQ2YHL1iti28QVdeik_mMIC7ip_riHp2XpXjjCLBcJHFIVGgAAfaA7f5RCEgbxIJ5MxnowLh5Joq6gsmbEGamLsFAL" />
+                            <div
+                                class="absolute top-4 right-4 bg-secondary-container text-primary-container font-bold px-space-sm py-1 rounded-lg font-label-md text-label-md">
+                                مرحلة التشطيب النهائي
+                            </div>
+                        </div>
+                        <div class="p-space-lg flex flex-col justify-between flex-1">
+                            <div>
+                                <div
+                                    class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md mb-space-xs">
+                                    <span>مباني تجارية وإدارية</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-[14px]">location_on</span> الخبر /
+                                        طريق الملك فهد</span>
+                                </div>
+                                <h3
+                                    class="font-title-md text-title-md font-bold text-primary group-hover:text-secondary transition-colors">
+                                    برج الأعمال والمقر الإداري المتكامل</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">برج تجاري مكون من 28
+                                    طابقاً مع 3 أدوار قبو للمواقف وأنظمة ذكية للأمان والتحكم البيئي.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex items-center justify-between">
+                                <span class="font-code-sm text-code-sm text-secondary font-semibold">32,000 م² — جاري
+                                    العمل</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3: Palm Villas Residential Complex -->
+                    <div
+                        class="group rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-surface-container-highest">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Architectural aerial view of a gated luxury residential villa community with manicured landscaping, concrete access roads, and modern contemporary homes in Saudi Arabia."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhgAXXfnC0pt9q3aSRhS6dbIZ0aydKx2LOMeKKEqPypteKDQWKcRmc2Igmn39ex62pQd6VPbKis0CXC-NQf9c5m5jDTQkfnQfUzSPuCYHqt-GTdjHIAIVa2yppgz0eU1yYW6vPNAvXRs51BOggCwpOWudRxzDHdKmwEt24IJmOi_SoheB9JtyTBCB5K7tX2nyrJAKmtC6LNCSUAp5IML7pTeFMzfLRXUXbePqI1JjAhTTmZ8HKF7lV" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary-container/90 text-secondary-container px-space-sm py-1 rounded-lg font-label-md text-label-md">
+                                تم التسليم
+                            </div>
+                        </div>
+                        <div class="p-space-lg flex flex-col justify-between flex-1">
+                            <div>
+                                <div
+                                    class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md mb-space-xs">
+                                    <span>مجمعات سكنية</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-[14px]">location_on</span> جدة، حي
+                                        أبحر الشمالية</span>
+                                </div>
+                                <h3
+                                    class="font-title-md text-title-md font-bold text-primary group-hover:text-secondary transition-colors">
+                                    مجمع فلل النخيل السكني الفاخر</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">تنفيذ 18 فيلا مستقلة
+                                    مع البنية التحتية الخاصة بها، الإنارة الذكية وشبكات الصرف والري.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex items-center justify-between">
+                                <span class="font-code-sm text-code-sm text-secondary font-semibold">14,200 م² — 18
+                                    شهراً</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4: Heavy Concrete Foundation Project -->
+                    <div
+                        class="group rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-surface-container-highest">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Dense geometric structural steel rebar grid and heavy concrete pouring boom operating on an immense industrial foundation slab in the Middle East."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYCFYmin0B8iDblRLCWENjj7s8s7NotRls_ErQHWcbK_JBkHmp9CDlqXZDv-kX9eGkGnmw2EMyaRsLnGHoNGwqWd1shqbwwhztSuWmY6XXUzwbApY1GdTHJiMWJhxh0yvrXQ9hiFWuhh8c969XbGcbGzlnJm8j8kwYoIPfxJerg4y_mPOONjJXmEmztqUU6IuLL7jHYgdhRoQiQm4T-6B05PSGnR4TqbMv5J0kgBlw5hKRNUFUj4BE" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary-container/90 text-secondary-container px-space-sm py-1 rounded-lg font-label-md text-label-md">
+                                مكتمل
+                            </div>
+                        </div>
+                        <div class="p-space-lg flex flex-col justify-between flex-1">
+                            <div>
+                                <div
+                                    class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md mb-space-xs">
+                                    <span>أعمال خرسانية متقدمة</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-[14px]">location_on</span> الرياض،
+                                        المدينة الصناعية</span>
+                                </div>
+                                <h3
+                                    class="font-title-md text-title-md font-bold text-primary group-hover:text-secondary transition-colors">
+                                    مشروع الأساسات الثقيلة واللبشة الخرسانية</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">صب مستمر لأكثر من
+                                    6,500 متر مكعب من الخرسانة المعالجة ذات المقاومة العالية للكبريتات.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex items-center justify-between">
+                                <span class="font-code-sm text-code-sm text-secondary font-semibold">صب مستمر 48
+                                    ساعة</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5: Luxury Stone Cladding and Interior -->
+                    <div
+                        class="group rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-surface-container-highest">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="High-end architectural natural stone cladding, Riyadh stone facade, dramatic uplighting and manicured palm landscape on a contemporary luxury estate."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrCOzGOH2YMAqnWkKYgPCcTWNcYg-uI8y_-eTr_yTNSj1mTdF5FfVuvgKzKoV0xwqA5bmg8HyWbXnplO3nLSduEmOlcso6SoQ1iXaboPymlVBfGNXI9-O1Be3PS082XRWum2D2MOkYQ6vhH_L4c3j90RempyeZBHh0qNBeoOYBOVmSZQWxvEMXm_Q5t8n5FnxYXvNbyaKuCSZbTwCD1Zz-5BNR-mor1MJW-qP7snH0ecH3Z0Po9zLI" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary-container/90 text-secondary-container px-space-sm py-1 rounded-lg font-label-md text-label-md">
+                                مكتمل
+                            </div>
+                        </div>
+                        <div class="p-space-lg flex flex-col justify-between flex-1">
+                            <div>
+                                <div
+                                    class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md mb-space-xs">
+                                    <span>تشطيبات وتكسيات فاخرة</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-[14px]">location_on</span> الدرعية
+                                        التاريخية</span>
+                                </div>
+                                <h3
+                                    class="font-title-md text-title-md font-bold text-primary group-hover:text-secondary transition-colors">
+                                    قصر الدرعية التراثي المودرن</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">تكسيات بحجر الرياض
+                                    الطبيعي مع عزل حراري ومائي فائق الدقة وتشطيبات خشبية معالجة.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex items-center justify-between">
+                                <span class="font-code-sm text-code-sm text-secondary font-semibold">2,100 م² — تشطيب
+                                    كامل</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6: Structural Rehabilitation -->
+                    <div
+                        class="group rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-surface-container-highest">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Historic modern hybrid stone building undergoing precision architectural restoration with subtle scaffolding and preservation lighting in central Riyadh."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuzp3pcTeK4Eg5HNNjxs2nQyNM_Y9Y7RTlcwV311Z8tXXUpdURGqUJ7lnUaWdwhMeO_zVKsKjQqU0YMQTnFV0PKFAjdulise2HaKxfuP5Edj4emxWr5lDamgn69qwTXwapuy1HSq8kDh1jrqV2lOl2NjXVeAtCfRB9_U--aRiZiRKc4TXLcENbGg9XTwBLi3fNj56JTZZNAOYj91pktF8G2PH_lvtjCTyG8fmttPGFY25M5UBp91yM" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary-container/90 text-secondary-container px-space-sm py-1 rounded-lg font-label-md text-label-md">
+                                مكتمل
+                            </div>
+                        </div>
+                        <div class="p-space-lg flex flex-col justify-between flex-1">
+                            <div>
+                                <div
+                                    class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md mb-space-xs">
+                                    <span>ترميم وتدعيم إنشائي</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-[14px]">location_on</span> وسط
+                                        الرياض</span>
+                                </div>
+                                <h3
+                                    class="font-title-md text-title-md font-bold text-primary group-hover:text-secondary transition-colors">
+                                    إعادة تأهيل وترميم مبنى تجاري تراثي</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">تدعيم بالألياف
+                                    الكربونية (CFRP) ومعالجة هبوط الأعمدة وإعادة تجديد كامل الواجهات الخارجية.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex items-center justify-between">
+                                <span class="font-code-sm text-code-sm text-secondary font-semibold">معالجة 40 عموداً
+                                    حرجاً</span>
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Centered Action Link -->
+                <div class="flex justify-center mt-space-2xl">
+                    <a class="inline-flex items-center gap-space-xs px-space-xl py-3.5 rounded-xl bg-primary text-surface-container-lowest hover:bg-secondary transition-colors font-label-lg text-label-lg shadow-md"
+                        href="#contact">
+                        <span>عرض كافة المشاريع والكتالوج الفني</span>
+                        <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                    </a>
+                </div>
+            </section>
+            <!-- 7. WHY CHOOSE US (6 High-Contrast Corporate Feature Blocks) -->
+            <section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface">
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+                    <div
+                        class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-semibold mb-space-xs">
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                        <span>معايير التميز</span>
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl font-bold text-primary">
+                        لماذا تختار مقاول عام شريكاً لمشروعك؟
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                        نضع بين يديك عقوداً من الخبرة الهندسية المتراكمة، والتزاماً لا يتزعزع بالجودة والشفافية التامة.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+                    <!-- Feature 1 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col gap-space-sm border-t-4 border-t-secondary-container">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-secondary-container/15 text-secondary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[28px]">price_change</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm font-bold text-primary">اسعار منافسة جدًا</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            تقديم عروض أسعار دقيقة وجداول كميات واضحة ومفصلة لكل بند، تمنحك وضوحاً مالياً تاماً دون أي
+                            تكاليف مستترة أو غير متوقعة.
+                        </p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col gap-space-sm border-t-4 border-t-primary">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[28px]">calendar_month</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm font-bold text-primary">التزام تام بالوقت والمواصفات</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            الالتزام الصارم بالمواعيد المحددة، مع متابعة دقيقة لمسار العمل الحرج لضمان التسليم في الوقت
+                            المحدد ووفقاً للمواصفات المتفق عليها.
+                        </p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col gap-space-sm border-t-4 border-t-secondary-container">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-secondary-container/15 text-secondary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[28px]">supervisor_account</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm font-bold text-primary"> إشراف يومي على الموقع
+                        </h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            مهندس مقيم واستشاري جودة حاضر يومياً في موقع العمل لتوثيق مراحل الصب ومطابقة كود البناء
+                            السعودي بدقة.
+                        </p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col gap-space-sm border-t-4 border-t-primary">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-primary-container text-secondary-container flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[28px]">receipt_long</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm font-bold text-primary">دفعات ميسرة حسب الاتفاق</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            خطط دفع مرنة وميسرة تتوافق مع مراحل المشروع، مما يتيح لك إدارة التدفقات النقدية بكفاءة دون
+                            ضغوط مالية.
+                        </p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col gap-space-sm border-t-4 border-t-secondary-container">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-secondary-container/15 text-secondary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[28px]">preview</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm font-bold text-primary">معاينة وتسعيرة مجانية داخل جدة</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            نقدم خدمة معاينة الموقع وتقديم عرض سعر تفصيلي مجاناً داخل مدينة جدة، لضمان وضوح التكاليف
+                            قبل بدء أي أعمال.
+                        </p>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- 8. PROJECT SHOWCASE (Split Feature Under the Spotlight) -->
+            <section
+                class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-primary-container text-surface-container-lowest">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+                    <!-- Right Side: Project Story & Specs (6 cols) -->
+                    <div class="lg:col-span-6 flex flex-col gap-space-md">
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary-container self-start">
+                            <span class="material-symbols-outlined text-[16px]">hotel_class</span>
+                            <span class="font-label-md text-label-md font-semibold">مشروع مميز تحت المجهر</span>
+                        </div>
+                        <h2
+                            class="font-headline-xl text-headline-xl font-bold text-surface-container-lowest leading-snug">
+                            فيلا الأفق المعمارية — الدرعية
+                        </h2>
+                        <p class="font-body-lg text-body-lg text-surface-container-high/90 leading-relaxed">
+                            تحفة معمارية استثنائية تجمع بين حداثة الخرسانة المعمارية المكشوفة، دفء الأخشاب الطبيعية،
+                            وانفتاح الواجهات الزجاجية العملاقة على مسبح إنفينيتي محاط بالنخيل، صُممت ونُفذت بالكامل
+                            بأيدي مهندسي بنيان للإعمار.
+                        </p>
+                        <!-- Spec Grid -->
+                        <div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+                            <div class="p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+                                <span class="font-label-md text-label-md text-secondary-container">نوع المشروع</span>
+                                <p class="font-title-md text-title-md font-bold text-surface-container-lowest mt-1">فيلا
+                                    سكنية فائقة الفخامة</p>
+                            </div>
+                            <div class="p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+                                <span class="font-label-md text-label-md text-secondary-container">إجمالي المساحة
+                                    المبنية</span>
+                                <p class="font-title-md text-title-md font-bold text-surface-container-lowest mt-1">
+                                    1,450 م² (طابقان وقبو)</p>
+                            </div>
+                            <div class="p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+                                <span class="font-label-md text-label-md text-secondary-container">مدة التنفيذ
+                                    الشاملة</span>
+                                <p class="font-title-md text-title-md font-bold text-surface-container-lowest mt-1">14
+                                    شهراً (تسليم قبل الموعد)</p>
+                            </div>
+                            <div class="p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+                                <span class="font-label-md text-label-md text-secondary-container">الموقع
+                                    الجغرافي</span>
+                                <p class="font-title-md text-title-md font-bold text-surface-container-lowest mt-1">
+                                    الدرعية، الرياض</p>
+                            </div>
+                        </div>
+                        <div class="pt-space-sm flex items-center gap-space-md">
+                            <a class="inline-flex items-center gap-space-xs bg-secondary-container hover:bg-secondary text-primary-container hover:text-surface-container-lowest font-label-lg text-label-lg px-space-xl py-3.5 rounded-xl transition-all duration-200"
+                                href="#contact">
+                                <span>طلب تفاصيل دراسة المشروع</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                            </a>
+                            <span class="font-label-md text-label-md text-on-tertiary-container">متاح للمعاينة الميدانية
+                                للعملاء المعتمدين</span>
+                        </div>
+                    </div>
+                    <!-- Left Side: Showcase Visual with Overlay Awards (6 cols) -->
+                    <div class="lg:col-span-6 relative">
+                        <div
+                            class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] w-full bg-surface-container-highest">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Architectural night photography of an expansive contemporary villa in Riyadh with illuminated glowing pool water, sunken seating lounge with firepit, lush palms, and city skyline backdrop."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmJl6Vez53mFPWOGAuIuJFKqFf5omMU-CxdCHSkZMIxLyobTor_LjrkBfy5R8eqOtvCTQ0NauSf4S3GtCyhScoEGQLsnWCOqF6nolxdvFwFJUuaTJj6aoliSRn9NMN6g_mHnsgI6oLYK1ooUObI4DWFpxF9yoqbvmKM8GKp_sJExmP10i9OpM9qShirAhdErX5BTP3op0MQ9e7x4Sb-YeJX-GFEUQ3ucuOdFNw1_caCir8QeL9HyNo" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-transparent to-transparent">
+                            </div>
+                            <!-- Awards Overlay Box -->
+                            <div
+                                class="absolute bottom-6 right-6 left-6 p-space-md rounded-xl bg-primary-container/80 backdrop-blur-md flex items-center justify-between">
+                                <div class="flex items-center gap-space-sm">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-[32px]">military_tech</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="font-title-md text-title-md font-bold text-surface-container-lowest">جائزة
+                                            التميز الإنشائي 2025</span>
+                                        <span class="font-label-md text-label-md text-on-tertiary-container">فئة المباني
+                                            السكنية المستدامة — مجلس المهندسين</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text-left font-code-sm text-code-sm text-secondary-container font-medium hidden sm:block">
+                                    RIYADH / KSA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 9. TESTIMONIALS (Client Trust) -->
+            <section
+                class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low">
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+                    <div
+                        class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-semibold mb-space-xs">
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                        <span>شهادات العملاء</span>
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl font-bold text-primary">
+                        ماذا يقول عملاؤنا؟ | ثقة نفتخر بها
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                        تجارب حقيقية لشركاء وملاك خاضوا معنا رحلة البناء وعاينوا جودة الإنجاز على أرض الواقع.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-md flex flex-col justify-between">
+                        <div class="flex flex-col gap-space-sm">
+                            <!-- 5 Stars -->
+                            <div class="flex items-center gap-1 text-secondary-container">
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                "شركة بنيان كانت الشريك المثالي في بناء فيلتنا الخاصة. الدقة في المواعيد وجودة الخرسانة
+                                والتشطيبات فاقت كل توقعاتنا، وكان المهندس المشرف متواجداً يومياً لتقديم تقارير مفصلة."
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-space-sm pt-space-md mt-space-md border-t border-surface-container-high">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container text-secondary-container flex items-center justify-center font-bold text-title-md">
+                                ع
+                            </div>
+                            <div class="flex flex-col">
+                                <h4 class="font-title-md text-title-md font-bold text-primary">م. عبد العزيز بن فهد</h4>
+                                <span class="font-label-md text-label-md text-on-surface-variant">مالك فيلا خاصة — حي
+                                    النرجس، الرياض</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-md flex flex-col justify-between">
+                        <div class="flex flex-col gap-space-sm">
+                            <!-- 5 Stars -->
+                            <div class="flex items-center gap-1 text-secondary-container">
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                "الشفافية في الأسعار والالتزام الصارم بالجدول الزمني جعل من تنفيذ مجمعنا التجاري تجربة
+                                سلسة وخالية من المتاعب. تم تسليم المبنى بالكامل قبل الموعد التعاقدي بأسبوعين."
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-space-sm pt-space-md mt-space-md border-t border-surface-container-high">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center font-bold text-title-md">
+                                س
+                            </div>
+                            <div class="flex flex-col">
+                                <h4 class="font-title-md text-title-md font-bold text-primary">أ. سارة المنصور</h4>
+                                <span class="font-label-md text-label-md text-on-surface-variant">المدير التنفيذي —
+                                    ريادة للاستثمار العقاري</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-md flex flex-col justify-between">
+                        <div class="flex flex-col gap-space-sm">
+                            <!-- 5 Stars -->
+                            <div class="flex items-center gap-1 text-secondary-container">
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                                <span class="material-symbols-outlined text-[20px] [font-variation-settings:'FILL'_1]">star</span>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                "فريق الإشراف الهندسي متواجد دائماً، ولديهم حلول هندسية ذكية لأي تحدٍ بالموقع. دقة تنفيذ
+                                أعمال التدعيم الإنشائي والخرسانة كانت على أعلى مستوى من الاحترافية."
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-space-sm pt-space-md mt-space-md border-t border-surface-container-high">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container text-secondary-container flex items-center justify-center font-bold text-title-md">
+                                ط
+                            </div>
+                            <div class="flex flex-col">
+                                <h4 class="font-title-md text-title-md font-bold text-primary">د. طارق السبيعي</h4>
+                                <span class="font-label-md text-label-md text-on-surface-variant">مالك مركز طبي وسكني —
+                                    جدة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 10. CALL TO ACTION (Action Banner with Textured Depth) -->
+            <section
+                class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-primary-container text-surface-container-lowest relative overflow-hidden">
+                <!-- Subtle Architectural Background Grid SVG Overlay -->
+                <div class="absolute inset-0 opacity-5 pointer-events-none">
+                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern height="40" id="archGrid" patternunits="userSpaceOnUse" width="40">
+                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"></path>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#archGrid)" height="100%" width="100%"></rect>
+                    </svg>
+                </div>
+                <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center gap-space-md">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-secondary-container/20 text-secondary-container flex items-center justify-center mb-space-xs">
+                        <span class="material-symbols-outlined text-[36px]">architecture</span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl font-bold text-surface-container-lowest leading-tight">
+                        لديك مشروع وتبحث عن شريك هندسي موثوق؟
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl leading-relaxed">
+                        تواصل معنا اليوم لمناقشة فكرتك الهندسية والحصول على استشارة فنية أولية ودراسة تكلفة تقديرية
+                        وجدول زمني محدد دون أي التزام مسبق.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center gap-space-md pt-space-md">
+                        <a class="inline-flex items-center gap-space-xs bg-secondary-container hover:bg-secondary text-primary-container hover:text-surface-container-lowest font-label-lg text-label-lg px-space-2xl py-4 rounded-xl shadow-xl transition-all duration-200"
+                            href="#contact">
+                            <span>اطلب عرض سعر مخصص لمشروعك</span>
+                            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                        </a>
+                        <a class="inline-flex items-center gap-space-xs bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest font-label-lg text-label-lg px-space-xl py-4 rounded-xl transition-all duration-200"
+                            dir="ltr" href="tel:+966114567890">
+                            <span class="material-symbols-outlined text-secondary-container text-[20px]">call</span>
+                            <span class="font-code-sm text-code-sm font-semibold">+966 11 456 7890</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 11. CONTACT SECTION (Two-Column Structured Layout with Styled Map Card) -->
+            <section class="w-full py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop bg-surface"
+                id="contact">
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+                    <div
+                        class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-semibold mb-space-xs">
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                        <span>قنوات الاتصال</span>
+                        <span class="w-4 h-0.5 bg-secondary-container"></span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl font-bold text-primary">
+                        تواصل مع خبرائنا الهندسيين
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                        فريقنا جاهز للإجابة عن استفساراتك الفنية، دراسة المخططات، وتقديم الدعم في كل مراحل البناء.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+                    <!-- Right Column: Contact Form (7 cols) -->
+                    <div
+                        class="lg:col-span-7 bg-surface-container-lowest rounded-2xl shadow-xl p-space-lg md:p-space-2xl">
+                        <form class="flex flex-col gap-space-md"
+                            onsubmit="event.preventDefault(); alert('شكراً لتواصلك مع بنيان للإعمار. سيقوم فريقنا الهندسي بالتواصل معك خلال 24 ساعة.');">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="font-title-md text-title-md font-bold text-primary">طلب استشارة هندسية وعرض
+                                    سعر</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">املأ النموذج أدناه وسيقوم
+                                    مهندس مختص بالتواصل معك مباشرة.</p>
+                            </div>
+                            <!-- Name & Phone Fields -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-label-lg text-label-lg font-semibold text-primary"
+                                        for="fullName">الاسم الكامل *</label>
+                                    <input
+                                        class="w-full px-space-md py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-lowest transition-colors"
+                                        id="fullName" placeholder="مثال: م. فهد الشمري" required="" type="text" />
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-label-lg text-label-lg font-semibold text-primary"
+                                        for="phoneNumber">رقم الجوال (مع الواتساب) *</label>
+                                    <div class="flex items-center rounded-xl bg-surface-container-low overflow-hidden">
+                                        <input
+                                            class="w-full px-space-md py-3 bg-transparent text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none"
+                                            dir="ltr" id="phoneNumber" placeholder="50 123 4567" required=""
+                                            type="tel" />
+                                        <span
+                                            class="px-space-sm font-code-sm text-code-sm text-on-surface-variant bg-surface-container-high py-3"
+                                            dir="ltr">+966</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Email & Project Type Fields -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-label-lg text-label-lg font-semibold text-primary"
+                                        for="emailAddress">البريد الإلكتروني</label>
+                                    <input
+                                        class="w-full px-space-md py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-lowest transition-colors"
+                                        id="emailAddress" placeholder="name@domain.sa" type="email" />
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-label-lg text-label-lg font-semibold text-primary"
+                                        for="projectType">نوع المشروع المطلوب *</label>
+                                    <select
+                                        class="w-full px-space-md py-3 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest transition-colors"
+                                        id="projectType" required="">
+                                        <option disabled="" selected="" value="">اختر نوع المشروع</option>
+                                        <option value="villa">فيلا سكنية فاخرة (عظم أو تسليم مفتاح)</option>
+                                        <option value="commercial">مبنى تجاري / مكاتب / مجمع</option>
+                                        <option value="concrete">أعمال خرسانية وأساسات متقدمة</option>
+                                        <option value="finishing">أعمال تشطيبات وتكسيات معمارية</option>
+                                        <option value="restoration">ترميم وتدعيم إنشائي</option>
+                                        <option value="supervision">استشارة وإشراف هندسي فقط</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Area & Location -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-label-lg text-label-lg font-semibold text-primary"
+                                        for="projectArea">المساحة المقدرة (م²)</label>
+                                    <div class="flex items-center rounded-xl bg-surface-container-low overflow-hidden">
+                                        <input
+                                            class="w-full px-space-md py-3 bg-transparent text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none"
+                                            id="projectArea" placeholder="مثال: 850" type="number" />
+                                        <span
+                                            class="px-space-sm font-label-md text-label-md text-on-surface-variant bg-surface-container-high py-3">متر
+                                            مربع</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label class="font-label-lg text-label-lg font-semibold text-primary"
+                                        for="cityLocation">مدينة المشروع *</label>
+                                    <input
+                                        class="w-full px-space-md py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-lowest transition-colors"
+                                        id="cityLocation" placeholder="مثال: الرياض - حي الملقا" required=""
+                                        type="text" />
+                                </div>
+                            </div>
+                            <!-- Message Field -->
+                            <div class="flex flex-col gap-1">
+                                <label class="font-label-lg text-label-lg font-semibold text-primary"
+                                    for="messageDetails">تفاصيل المشروع والمتطلبات الخاصة</label>
+                                <textarea
+                                    class="w-full px-space-md py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-lowest transition-colors"
+                                    id="messageDetails"
+                                    placeholder="يرجى ذكر أي تفاصيل، وجود مخططات معتمدة، أو متطلبات خاصة للتسليم..."
+                                    rows="4"></textarea>
+                            </div>
+                            <!-- Submit Button -->
+                            <button
+                                class="w-full py-4 rounded-xl bg-secondary-container hover:bg-secondary text-primary-container hover:text-surface-container-lowest font-label-lg text-label-lg font-bold shadow-md transition-all duration-200 flex items-center justify-center gap-space-xs mt-space-xs"
+                                type="submit">
+                                <span>إرسال طلب الاستشارة الهندسية</span>
+                                <span class="material-symbols-outlined text-[20px]">send</span>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Left Column: Official Contact Details & Map Card (5 cols) -->
+                    <div class="lg:col-span-5 flex flex-col gap-space-lg">
+                        <!-- Official Details Card -->
+                        <div
+                            class="bg-surface-container-lowest rounded-2xl shadow-xl p-space-xl flex flex-col gap-space-md">
+                            <h3 class="font-title-md text-title-md font-bold text-primary">بيانات الاتصال والمقر الرئيسي
+                            </h3>
+                            <div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+                                <div class="flex items-start gap-space-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined text-[20px]">location_on</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-lg text-label-lg font-semibold text-primary">المقر
+                                            الرئيسي:</span>
+                                        <span>طريق الملك فهد، حي الصحافة، برج الراجحي التجاري، الدور 14، الرياض، المملكة
+                                            العربية السعودية</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-space-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined text-[20px]">call</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-lg text-label-lg font-semibold text-primary">أرقام
+                                            التواصل المباشر:</span>
+                                        <span class="font-code-sm text-code-sm text-right font-medium" dir="ltr">+966 0568824635</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-space-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined text-[20px]">mail</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-lg text-label-lg font-semibold text-primary">المراسلات
+                                            الهندسية والعطاءات:</span>
+                                        <span class="font-code-sm text-code-sm text-right font-medium"
+                                            dir="ltr">contact@bonyan-contracting.sa</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-space-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined text-[20px]">schedule</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-lg text-label-lg font-semibold text-primary">أوقات العمل
+                                            الميدانية والمكتبية:</span>
+                                        <span>السبت — الخميس: 8:00 صباحاً حتى 6:00 مساءً</span>
+                                        <span class="text-secondary font-medium">خدمة الطوارئ الإنشائية الميدانية 24/7
+                                            للمشاريع النشطة</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Styled Map Card -->
+                        <div class="bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden flex flex-col">
+                            <div class="relative h-56 w-full overflow-hidden bg-surface-container-highest"
+                                data-location="King Fahd Road, Riyadh, Saudi Arabia"
+                                >
+                                <img alt="موقع المقر الرئيسي على طريق الملك فهد" class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtCvRyWVbSV7eeDYln_HFlAhoFoOIoQI5-5ZMKj8UwQCMLcqQE2oHnB-puuJNn3M1TguX7cpG-b7e6oEaVy2s8_6nkvOloOmYDtmIjANOeN1c4mpwc2yNFJO2IE0H4fD2QdGBtOLV2_PbhQ0BrM8gHcXHPeUuksfyof3FuTSq3NLyxzo7KXgUqQeGU9KJjDPeGsTqrtWqWNvOL0sVj6BKHzNkr_zJ7P8FnMp13hGuruw899zxXu_If" />
+                                <div class="absolute inset-0 bg-primary-container/40"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div
+                                        class="p-space-xs rounded-xl bg-primary-container/95 text-surface-container-lowest shadow-2xl flex items-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-secondary-container text-[24px]">apartment</span>
+                                        <span class="font-label-lg text-label-lg font-bold">برج مقاول عام - جدة —
+                                            جدة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-space-md bg-surface-container-low flex items-center justify-between">
+                                <div class="flex flex-col">
+                                    <span
+                                        class="font-label-md text-label-md text-on-surface-variant font-code-sm">24.7136°
+                                        N, 46.6753° E</span>
+                                    <span class="font-label-md text-label-md text-primary font-semibold">موقف خاص متوفر
+                                        لعملاء المكتب</span>
+                                </div>
+                                <a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary hover:text-secondary-container transition-colors"
+                                    href="https://maps.google.com" rel="noopener" target="_blank">
+                                    <span>الاتجاهات عبر الخريطة</span>
+                                    <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="w-full bg-tertiary-container text-surface-container-high">
+        <div class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-2xl">
+                <div class="lg:col-span-2 flex flex-col gap-space-md">
+                    <div class="flex items-center gap-space-sm"><img alt="Bonyan Contracting Logo"
+                            class="h-8 w-auto object-contain brightness-0 invert"
+                            src="https://lh3.googleusercontent.com/aida/AEtjO1V0GsrJe4ZaBazKsBLk5oAmvnNF2OVVUTDf957nosKVxpiVSSlNEdvg0-rUwwBoULDwZeZ5t5n4JVn6gAMVy46xYMgMgsFUyH7Rv0hjtZ6Oicw8zsA5dZZqjU6_oBeV1w5O7GhG20_3r8oRORyy0iHtPYj7vTiSalOip2I8mCXpw31UUpXnQB0BW2dsZ4Q31cSyDT36U45_XIcHBCgWDV5ZkYkGB0Hs2V7_f0V9cag8uicOq86VBAewoAE" /><span
+                            class="font-headline-sm text-headline-sm text-surface-container-lowest">مقاول عام - جدة</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-tertiary-container max-w-md leading-relaxed">صرح هندسي
+                        رائد في تطوير البنية التحتية والمقاولات العامة والإنشاءات الضخمة في المملكة العربية السعودية
+                        والخليج العربي، بمعايير هندسية عالمية وتنفيذ دقيق.</p>
+                    <div class="flex items-center gap-space-sm pt-space-xs"><a
+                            class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-tertiary-container hover:text-secondary-container hover:bg-surface-container-highest/10 transition-colors"
+                            href="#"><span class="material-symbols-outlined text-[18px]">work</span></a><a
+                            class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-tertiary-container hover:text-secondary-container hover:bg-surface-container-highest/10 transition-colors"
+                            href="#"><span class="material-symbols-outlined text-[18px]">share</span></a><a
+                            class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-tertiary-container hover:text-secondary-container hover:bg-surface-container-highest/10 transition-colors"
+                            href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a
+                            class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-tertiary-container hover:text-secondary-container hover:bg-surface-container-highest/10 transition-colors"
+                            href="#"><span class="material-symbols-outlined text-[18px]">chat</span></a></div>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h4 class="font-title-md text-title-md text-surface-container-lowest">روابط سريعة</h4>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-tertiary-container">
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#">الرئيسية</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#about">من نحن
+                                ورؤيتنا</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#team">مجلس الإدارة
+                                والكفاءات</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#careers">التوظيف
+                                والمهن</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#tenders">بوابة
+                                المناقصات</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h4 class="font-title-md text-title-md text-surface-container-lowest">خدماتنا الهندسية</h4>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-tertiary-container">
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#">المقاولات العامة
+                                والإنشاءات</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#">تطوير البنية
+                                التحتية والجسور</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#">إدارة المشاريع
+                                والإشراف الهندسي</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#">الأعمال
+                                الكهروميكانيكية (MEP)</a></li>
+                        <li class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[14px]">arrow_back</span><a
+                                class="hover:text-surface-container-lowest transition-colors" href="#">الاستشارات
+                                البيئية والاستدامة</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h4 class="font-title-md text-title-md text-surface-container-lowest">بيانات التواصل الرسمية</h4>
+                    <div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-tertiary-container">
+                        <div class="flex items-start gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[18px] mt-1">location_on</span><span>طريق
+                                الملك فهد، حي الصحافة، الرياض، المملكة العربية السعودية</span></div>
+                        <div class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[18px]">call</span><span
+                                class="font-code-sm text-code-sm" dir="ltr">+966 11 456 7890</span></div>
+                        <div class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[18px]">mail</span><span
+                                class="font-code-sm text-code-sm" dir="ltr">contact@bonyan-contracting.sa</span></div>
+                        <div class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-secondary-container text-[18px]">schedule</span><span>الأحد
+                                - الخميس: 8:00 ص - 5:00 م</span></div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-tertiary-container font-label-md text-label-md">
+                <p>© 2026 مقاول عام-جدة للمقاولات والاستشارات الهندسية. جميع الحقوق محفوظة.</p>
+                <div class="flex items-center gap-space-lg"><a
+                        class="hover:text-surface-container-lowest transition-colors" href="#">سياسة الخصوصية</a><a
+                        class="hover:text-surface-container-lowest transition-colors" href="#">الشروط والأحكام</a><a
+                        class="hover:text-surface-container-lowest transition-colors" href="#">معايير السلامة
+                        والجودة</a></div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const heroSlider = document.querySelector('#hero-slider');
+        const heroSlides = [...document.querySelectorAll('.hero-slide')];
+        const heroDots = document.querySelector('#hero-dots');
+        const heroPrevious = document.querySelector('#hero-prev');
+        const heroNext = document.querySelector('#hero-next');
+        let activeHeroSlide = 0;
+        let heroTimer;
+
+        const renderHeroSlide = (slideIndex) => {
+            activeHeroSlide = (slideIndex + heroSlides.length) % heroSlides.length;
+            heroSlides.forEach((slide, index) => {
+                const isActive = index === activeHeroSlide;
+                slide.classList.toggle('opacity-100', isActive);
+                slide.classList.toggle('opacity-0', !isActive);
+                slide.setAttribute('aria-hidden', String(!isActive));
+            });
+            [...heroDots.children].forEach((dot, index) => {
+                dot.classList.toggle('w-8', index === activeHeroSlide);
+                dot.classList.toggle('w-2', index !== activeHeroSlide);
+                dot.classList.toggle('bg-secondary-container', index === activeHeroSlide);
+                dot.classList.toggle('bg-white/50', index !== activeHeroSlide);
+                dot.setAttribute('aria-selected', String(index === activeHeroSlide));
+            });
+        };
+
+        const restartHeroTimer = () => {
+            window.clearInterval(heroTimer);
+            heroTimer = window.setInterval(() => renderHeroSlide(activeHeroSlide + 1), 6000);
+        };
+
+        heroSlides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.className = 'h-2 w-2 rounded-full bg-white/50 transition-all duration-300';
+            dot.setAttribute('aria-label', `عرض الصورة ${index + 1}`);
+            dot.setAttribute('role', 'tab');
+            dot.addEventListener('click', () => {
+                renderHeroSlide(index);
+                restartHeroTimer();
+            });
+            heroDots.append(dot);
+        });
+
+        heroPrevious.addEventListener('click', () => {
+            renderHeroSlide(activeHeroSlide - 1);
+            restartHeroTimer();
+        });
+        heroNext.addEventListener('click', () => {
+            renderHeroSlide(activeHeroSlide + 1);
+            restartHeroTimer();
+        });
+        heroSlider.addEventListener('mouseenter', () => window.clearInterval(heroTimer));
+        heroSlider.addEventListener('mouseleave', restartHeroTimer);
+        heroSlider.addEventListener('focusin', () => window.clearInterval(heroTimer));
+        heroSlider.addEventListener('focusout', (event) => {
+            if (!heroSlider.contains(event.relatedTarget)) restartHeroTimer();
+        });
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) window.clearInterval(heroTimer);
+            else restartHeroTimer();
+        });
+
+        renderHeroSlide(0);
+        restartHeroTimer();
+    </script>
+</body>
+
+</html>
